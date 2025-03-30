@@ -10,7 +10,7 @@ function desglosarString(text, tipo) {
                 vowelCounter = vowelCounter + 1;
             }
         });
-        return "Vocales: " + vowelCounter;
+        return vowelCounter;
     }
     if (tipo === "consonantes") {
         let consonantCounter = 0;
@@ -19,7 +19,7 @@ function desglosarString(text, tipo) {
                 consonantCounter = consonantCounter + 1;
             }
         });
-        return "Consonantes: " + consonantCounter;
+        return consonantCounter;
     }
     else {
         return "Tipo solo puede ser 'vocales' o 'consonantes'";
