@@ -14,7 +14,7 @@ app.listen(PORT, () => {    console.log(`Servidor corriendo en http://localhost:
 
 //PUNTO 1
 app.get("/users/hobby", (req, res) => {
-    const hobby = req.query.search; //Obtener el hobby de la query
+    const hobby = req.query.search; 
   
     if (!hobby) {
       return res.status(400).json({ error: "Debes proporcionar un hobby en la query (Ej: ?search=lectura)" });
@@ -47,7 +47,7 @@ app.get("/users/exists", (req, res) => {
 
 //PUNTO 3
 app.get("/users/hobby/count", (req, res) => {
-  const hobby = req.query.search; //Obtener el hobby de la query
+  const hobby = req.query.search;
 
   if (!hobby) {
     return res.status(400).json({ error: "Debes proporcionar un hobby en la query (Ej: ?search=lectura)" });
